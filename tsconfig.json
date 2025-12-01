@@ -5,10 +5,12 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    // other options...
-    "baseUrl": ".",
+    "composite": true,
+    "ignoreDeprecations": "6.0",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["src/*"]
+      "@providers/*": ["providers/*"],
+      "@styles/*": ["styles/*"],
     }
   }
 }
